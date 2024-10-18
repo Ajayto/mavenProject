@@ -1,3 +1,4 @@
+package TestPkg;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +13,7 @@ public class NewTest {
 	  System.out.println("new test");
   }
   
-  @Test
+  @Test(groups ={"Regression"})
 public void f1() {
 	  
 	  WebDriver driver= new ChromeDriver();
